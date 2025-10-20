@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --minify",
-    "watch:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./css/style.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./css/style.css --watch",
     "start": "npx http-server -c-1 . -p 3000",
     "dev": "concurrently \"npm:watch:css\" \"npm:start\" --names tailwind,server --prefix name --kill-others"
   },
